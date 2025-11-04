@@ -1,0 +1,11 @@
+https://dagshub.com/dhirajpawar2508/Capstone-Project.mlflow
+
+import dagshub
+dagshub.init(repo_owner='dhirajpawar2508', repo_name='Capstone-Project', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+
+  353a80a8a88c1d0ca3baf6a5216a2b0c81b2542e
